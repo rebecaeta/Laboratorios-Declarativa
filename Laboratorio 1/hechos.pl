@@ -1,0 +1,65 @@
+% ===============================================
+% Base de conocimientos: Supervivencia en la isla
+% ===============================================
+
+% --- Personajes ---
+personaje(eric).
+personaje(timmy).
+personaje(kelvin).
+personaje(virginia).
+protagonista(eric).
+edad(eric,30).
+
+aliado(kelvin).
+capturado(kelvin).
+no_habla(kelvin).
+
+mutante(virginia).
+posible_aliado(virginia).
+
+% --- Habilidades y objetos ---
+tiene(eric, hacha).
+tiene(eric, encendedor).
+cargar(kelvin, troncos).
+construye_si_se_ordena(kelvin).
+
+% --- Zonas Isla ---
+zona(superficie).
+zona(cuevas).
+zona(bunkeres).
+
+% --- Enemigos ---
+enemigo(canibales, superficie).
+enemigo(mutantes, superficie).
+enemigo(mutantes, cuevas).
+
+requiere(bunkeres, llaves).
+
+% --- Nivel de peligro ---
+nivel_peligro(cuevas, dia, alto).
+nivel_peligro(cuevas, noche, alto).
+nivel_peligro(superficie, dia, medio).
+nivel_peligro(superficie, noche, alto).
+
+% --- Necesidades ---
+necesita(eric, refugio).
+necesita(eric, comida).
+necesita(eric, agua).
+
+% --- Materiales disponibles ---
+material_en(troncos, superficie).
+material_en(piedras, superficie).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
