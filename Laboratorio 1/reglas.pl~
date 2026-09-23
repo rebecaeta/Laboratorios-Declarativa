@@ -1,0 +1,8 @@
+:- consult('hechos.pl').
+
+% Una zona tiene enemigos si aparece alguno ahi
+zona_con_enemigos(Zona, Momento) :-
+    ( enemigo(_, Zona)
+    ; nivel_peligro(Zona, Momento, alto)
+    ; nivel_peligro(Zona, Momento, medio)
+    ).
