@@ -9,8 +9,8 @@ public class Connection {
     private final Prolog engine = new Prolog();
 
     public Connection() throws Exception {
-        try (InputStream in = getClass().getResourceAsStream("/operaciones.pl")) {
-            if (in == null) throw new IllegalStateException("No se encontró operaciones.pl");
+        try (InputStream in = getClass().getResourceAsStream("/calculos.pl")) {
+            if (in == null) throw new IllegalStateException("No se encontró calculos.pl");
             engine.setTheory(new Theory(in));
         }
     }
